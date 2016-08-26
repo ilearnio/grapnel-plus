@@ -9,7 +9,7 @@ A wrapper around [Grapnel](https://github.com/baseprime/grapnel) router that ext
 npm i -S grapnel-plus
 ```
 
-# Usage 
+# Usage
 
 ```js
 //
@@ -45,7 +45,7 @@ Arguments:
   * _...middlewares_ - Express-compatible middlewares (one or more) that will be executed one after another (optional)
 
 ```js
-router.page('/path', 'component-name'[, ...optionalMiddlewares])
+router.page('/path', 'component-name', 'optional-route-name', ...optionalMiddlewares)
 ```
 
 ## New method `use`
@@ -55,7 +55,7 @@ Register middlewares that will be triggered before your routes. This allows you 
 ```js
 router.use((req, res, next) => { ... })
 router.use((req, res, next) => { ... }, (req, res, next) => { ... })
-router  .use(
+router.use(
   (req, res, next) => { ... },
   // passing array of middewares is also allowed
   [ (req, res, next) => { ... }, (req, res, next) => { ... } ]
