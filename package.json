@@ -1,0 +1,39 @@
+{
+  "name": "grapnel-plus",
+  "version": "0.0.2",
+  "description": "Additional features for Grapnel router",
+  "author": {
+    "name": "Nick Gavrilov",
+    "email": "artnikpro@gmail.com"
+  },
+  "scripts": {
+    "test": "mocha test/specs.js"
+  },
+  "homepage": "https://github.com/ilearnio/grapnel-plus",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilearnio/grapnel-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ilearnio/grapnel-plus/issues"
+  },
+  "keywords": [
+    "router",
+    "universal",
+    "middleware"
+  ],
+  "license": "ISC",
+  "main": "router.js",
+  "files": [
+    "router-client.js",
+    "router-server.js",
+    "router.js"
+  ],
+  "dependencies": {
+    "grapnel": "github:ilearnio/grapnel",
+    "grapnel-server": "github:ilearnio/grapnel#server-router"
+  },
+  "devDependencies": {
+    "mock-browser": "^0.92.12"
+  }
+}
