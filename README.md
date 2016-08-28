@@ -85,4 +85,4 @@ router.group('/admin', function () {
 ## Other properties/methods
   * _routes_ - an array of registered routes as well as groups
   * _getRoute(name)_ - get route by name
-  * _getRouteBy(by)_ -  get route by "path", "page", or "name"
+  * _getRouteBy(by, value)_ -  get route by "path", "page", or "name"

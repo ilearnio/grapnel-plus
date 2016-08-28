@@ -25,7 +25,7 @@ function getRouter (_Grapnel) {
     /**
      * Version
      */
-    self.version = '0.0.1 (Grapnel v' + self.version + ')'
+    self.version = '0.0.3 (Grapnel v' + self.version + ')'
   }
 
   var proto = Router.prototype = Object.create(_Grapnel.prototype)
